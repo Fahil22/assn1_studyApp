@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00BCD4"
+    tools:context=".third"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/lb"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="100sp"
+        android:paddingLeft="15dp"
+        android:layout_marginTop="55dp"
+        android:fontFamily="@font/archivo_black"
+        android:textAlignment="center"
+        android:textColor="#070000"
+        android:textSize="40sp" />
+
+    <ListView
+        android:id="@+id/tf"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5sp"
+        android:background="#673AB7"
+        android:gravity="center"
+        android:minWidth="400sp"
+        android:minHeight="400sp"
+        android:padding="20dp"
+
+        android:textColor="#FFFFFF"
+        android:textSize="25sp"
+        android:textStyle="bold"
+
+
+        />
+
+</androidx.appcompat.widget.LinearLayoutCompat>
