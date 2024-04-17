@@ -2,9 +2,12 @@ package com.example.assienment1;
 
 import android.annotation.SuppressLint;
 import android.content.Intent;
+import android.graphics.Color;
+import android.graphics.Typeface;
 import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextWatcher;
+import android.util.TypedValue;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
@@ -70,7 +73,7 @@ public class second extends AppCompatActivity {
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 course clickedCourse = (course) parent.getItemAtPosition(position);
                 Toast.makeText(second.this, "Clicked: " + clickedCourse.name, Toast.LENGTH_SHORT).show();
-
+                view.setBackgroundColor(Color.parseColor("#FFCC80"));
                 String course = clickedCourse.name;
                 Intent intent = new Intent(second.this, third.class);
                 intent.putExtra("level", level);
@@ -79,19 +82,24 @@ public class second extends AppCompatActivity {
             }
         });
 
-        // Add a listener to the EditText to reload data when the text changes
+
         editText.addTextChangedListener(new TextWatcher() {
             @Override
             public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+
 
             }
 
             @Override
             public void onTextChanged(CharSequence s, int start, int before, int count) {
+                editText.setBackgroundColor(Color.parseColor("#FFFFFF"));
+
             }
 
             @Override
             public void afterTextChanged(Editable s) {
+                editText.setBackgroundColor(Color.parseColor("#D09BF6"));
+
                 if (level.equals("level1")) {
                     loadLevel1Data();
                 } else if (level.equals("level2")) {

@@ -28,7 +28,7 @@
         android:id="@+id/editText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="#D09BF6"
+        android:background="#DEB6E4"
         android:textColor="#000000"
         android:ems="10"
         android:fontFamily="sans-serif-black"

@@ -13,10 +13,10 @@
         android:id="@+id/levelG"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="120sp"
         android:layout_marginLeft="50dp"
+        android:layout_marginTop="120sp"
         android:minWidth="300dp"
-        android:minHeight="200sp"
+        android:minHeight="130sp"
         android:orientation="horizontal">
 
         <RadioButton
@@ -25,7 +25,7 @@
             android:layout_height="94dp"
             android:fontFamily="Helvetica"
             android:forceHasOverlappingRendering="false"
-            android:text="level1"
+            android:text="Level 1"
 
             android:textColor="#000000"
             android:textSize="25sp"
@@ -38,7 +38,7 @@
             android:fontFamily="Helvetica"
             android:minWidth="100sp"
             android:minHeight="70sp"
-            android:text="level2"
+            android:text="Level 2"
             android:textColor="#000000"
             android:textColorLink="#FFFFFF"
             android:textSize="25sp"
@@ -48,14 +48,14 @@
             android:id="@+id/level3"
             android:layout_width="120dp"
             android:layout_height="94dp"
-            android:textStyle="bold|normal"
             android:fontFamily="Helvetica"
             android:minWidth="100sp"
             android:minHeight="70sp"
-            android:text="level3"
+            android:text="Level 3"
             android:textColor="#000000"
             android:textColorLink="#FFFFFF"
-            android:textSize="25sp" />
+            android:textSize="25sp"
+            android:textStyle="bold|normal" />
 
     </RadioGroup>
 
